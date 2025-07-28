@@ -6,15 +6,15 @@ Kontakt: toda5240@bht-berlin.de
 
 <br><br><br>
 # Inhaltsverzeichnis
-1. [EP.01 Dasymetrische Choroplethenkarte](#EP.01)
-2. [EP.02 Gitterchoroplethenkarte](#EP.02)
-3. [EP.03 Punktrasterkarte](#EP.03)
-4. [EP.04 Value-by-alpha Mapping](#EP.04)
-5. [EP.05 Tilemaps](#EP.05)
-6. [EP.06 Flowmaps](#EP.06)
-7. [EP.07 Mesh-Daten](#EP.07)
-8. [EP.08 Animationen in QGIS](#EP.08)
-9. [EP.09 3D-Gebäudemodelle](#EP.09)
+[EP.01 Dasymetrische Choroplethenkarte](#EP.01)
+[EP.02 Gitterchoroplethenkarte](#EP.02)
+[EP.03 Punktrasterkarte](#EP.03)
+[EP.04 Value-by-alpha Mapping](#EP.04)
+[EP.05 Tilemaps](#EP.05)
+[EP.06 Flowmaps](#EP.06)
+[EP.07 Mesh-Daten](#EP.07)
+[EP.08 Animationen in QGIS](#EP.08)
+[EP.09 3D-Gebäudemodelle](#EP.09)
 
 <br><br>
 <a id="EP.01"></a>
@@ -101,8 +101,9 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 * Parameter-Abhängigkeit – Ergebnisse hängen stark von Rastergrösse und -ausrichtung ab; andere Gittergrössen können andere Muster suggerieren.
 * Symbolüberladung – Mehrere Variablen (Grösse + Farbe + Kategorie) in dicht bebauten Gebieten führen leicht zu visuellem Clutter und erschweren das Kartenlesen.
 
-<br><br><br>
-
+<br><br>
+<a id="EP.04"></a>
+<br>
 # EP.04 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
 ## Ergebnis
@@ -114,8 +115,9 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 ## Nachteile der Methode
 
 
-<br><br><br>
-
+<br><br>
+<a id="EP.05"></a>
+<br>
 # EP.05 | 
 ![image](***)
 ## Ergebnis
@@ -127,8 +129,9 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 ## Nachteile der Methode
 
 
-<br><br><br>
-
+<br><br>
+<a id="EP.06"></a>
+<br>
 # EP.06 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
 ## Ergebnis
@@ -140,8 +143,9 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 ## Nachteile der Methode
 
 
-<br><br><br>
-
+<br><br>
+<a id="EP.07"></a>
+<br>
 # EP.07 | 
 [Gif-Link](https://cloud.acarin.de/s/DTM_EP07_Meshdaten)
 ## Ergebnis
@@ -153,8 +157,9 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 ## Nachteile der Methode
 
 
-<br><br><br>
-
+<br><br>
+<a id="EP.08"></a>
+<br>
 # EP.08 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C8_meteor-shower_quadrantids.png)
 ## Ergebnis
@@ -166,8 +171,9 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 ## Nachteile der Methode
 
 
-<br><br><br>
-
+<br><br>
+<a id="EP.09"></a>
+<br>
 # EP.09 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C9_2.5d-stadtmodelle_dresen.png)
 ## Ergebnis

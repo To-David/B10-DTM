@@ -5,8 +5,19 @@ Herausgeber: BHT
 Kontakt: toda5240@bht-berlin.de  
 
 <br><br><br>
+# Inhaltsverzeichnis
+1. [EP.01 Dasymetrische Choroplethenkarte](#EP.01)
+2. [EP.02 Gitterchoroplethenkarte](#EP.02)
+3. [EP.03 Punktrasterkarte](#EP.03)
+4. [EP.04 Value-by-alpha Mapping](#EP.04)
+5. [EP.05 Tilemaps](#EP.05)
+6. [EP.06 Flowmaps](#EP.06)
+7. [EP.07 Mesh-Daten](#EP.07)
+8. [EP.08 Animationen in QGIS](#EP.08)
+9. [EP.09 3D-Gebäudemodelle](#EP.09)
 
-# EP.01 | Dasymetrische Choroplethenkarte (Bevölkerungsdichte Berlins)
+<br><br><br>
+# EP.01 | Dasymetrische Choroplethenkarte (Bevölkerungsdichte Berlins)<a name="EP.01"></a>
 ![image](https://github.com/To-David/B10-DTM/blob/cf572afbcd849946e0471e8133b370fedbe4090b/files/25-04-03_David_%C3%9C1_Planungsr%C3%A4ume-Berlins.png)
 ## Ergebnis
 Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungsdichte in Berlins Planungsräumen:
@@ -35,7 +46,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 
 <br><br><br>
 
-# EP.02 | Gitterchoroplethenkarte (Kirschbäume Berlins)
+# EP.02 | Gitterchoroplethenkarte (Kirschbäume Berlins)<a name="EP.02"></a>
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-10_David_%C3%9C2_Kirschbaeume-Berlins.png)
 ## Ergebnis
 Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass Kirschbäume in Berlin nicht gleichmäßig verteilt sind. Vor allem im Osten und Südosten Köpenicks und Teilen des Westens Berlins sind kaum oder keine Kirschbäume aufzufinden. Eine solche Analyse ist nur mittels geometrischer Auswertemethoden (z.B. wie hier mittels Hexagone) möglich.
@@ -62,7 +73,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 
 <br><br><br>
 
-# EP.03 | 
+# EP.03 | <a name="EP.03"></a>
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-17_David_%C3%9C3_AirBnB-Berlin.png)
 ## Ergebnis
 Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die innerstädtischen Bezirke konzentrieren. In den 2x2 km-Zellen von Mitte, Kreuzberg, Friedrichshain und Prenzlauer Berg treten sowohl die höchsten Angebotszahlen (bis > 350 Wohnungen/Häuser pro Raster) als auch die höchsten Durchschnittspreise (> 200 EUR/Nacht) auf. In den Außenbezirken nimmt die Zahl der Inserate deutlich ab, und die Preise liegen überwiegend unter 100 EUR/Nacht. Hotelzimmer häufen sich erwartungsgemäß im touristischen Zentrum innerhalb der S-Bahn-Ringbahn, während geteilte und private Zimmer häufiger in angrenzenden Wohngebieten erscheinen. Insgesamt erlaubt das gleichmäßige Raster, Hot-Spots schnell zu erkennen.

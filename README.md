@@ -4,7 +4,7 @@ Autor: Toni David
 Herausgeber: BHT  
 Kontakt: toda5240@bht-berlin.de  
 
-# EP.01 | Dasymetrische Choroplethenkarte
+# EP.01 | Dasymetrische Choroplethenkarte (Bevölkerungsdichte Berlins)
 ![image](https://github.com/To-David/B10-DTM/blob/cf572afbcd849946e0471e8133b370fedbe4090b/files/25-04-03_David_%C3%9C1_Planungsr%C3%A4ume-Berlins.png)
 ## Ergebnis
 Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungsdichte in Berlins Planungsräumen:
@@ -31,14 +31,14 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 * Annahme „keine Bewohner außerhalb Urban Fabric“ – In Großstädten kaum problematisch, in suburbanen oder ländlichen Kontexten aber eine zu grobe Vereinfachung.
 * Höherer Aufwand – Filter , Auflöse , Verschneidungs  und Join Schritte kosten Zeit und Rechenleistung; jede Aktualisierung der Einwohnerzahlen erfordert ein erneutes Durchlaufen des Workflows.
 
-# EP.02 | 
+# EP.02 | Gitterchoroplethenkarte (Kirschbäume Berlins)
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-10_David_%C3%9C2_Kirschbaeume-Berlins.png)
 ## Ergebnis
 Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass Kirschbäume in Berlin nicht gleichmäßig verteilt sind. Vor allem im Osten und Südosten Köpenicks und Teilen des Westens Berlins sind kaum oder keine Kirschbäume aufzufinden. Eine solche Analyse ist nur mittels geometrischer Auswertemethoden (z.B. wie hier mittels Hexagone) möglich.
 ## Arbeitsschritte
 1.	Datenbeschaffung & Import
 * Bezirksgrenzen und Baumbestand als WFS-Layer aus dem Geoportal Berlin einfügen
-2.	Erstellen des Hexagon¬gitters
+2.	Erstellen des Hexagongitters
 * Menü Vektor → Recherchewerkzeuge → Gitter erzeugen
 * Typ = „Hexagon (Polygone)“, Ausdehnung = Bezirksgrenzen Layer, Seitenlänge 500 m → kurzer Diagonal¬abstand ≈ 866,025 m als horizontale & vertikale Schrittweite eingetragen. 
 3.	Aggregation (räumlicher Join)

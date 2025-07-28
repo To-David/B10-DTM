@@ -6,15 +6,15 @@ Kontakt: toda5240@bht-berlin.de
 
 <br><br><br>
 # Inhaltsverzeichnis
-[EP.01 Dasymetrische Choroplethenkarte](#EP.01)
-[EP.02 Gitterchoroplethenkarte](#EP.02)
-[EP.03 Punktrasterkarte](#EP.03)
-[EP.04 Value-by-alpha Mapping](#EP.04)
-[EP.05 Tilemaps](#EP.05)
-[EP.06 Flowmaps](#EP.06)
-[EP.07 Mesh-Daten](#EP.07)
-[EP.08 Animationen in QGIS](#EP.08)
-[EP.09 3D-Gebäudemodelle](#EP.09)
+[EP.01 Dasymetrische Choroplethenkarte](#EP.01)<br>
+[EP.02 Gitterchoroplethenkarte](#EP.02)<br>
+[EP.03 Punktrasterkarte](#EP.03)<br>
+[EP.04 Value-by-alpha Mapping](#EP.04)<br>
+[EP.05 Tilemaps](#EP.05)<br>
+[EP.06 Flowmaps](#EP.06)<br>
+[EP.07 Mesh-Daten](#EP.07)<br>
+[EP.08 Animationen in QGIS](#EP.08)<br>
+[EP.09 3D-Gebäudemodelle](#EP.09)<br>
 
 <br><br>
 <a id="EP.01"></a>

@@ -3,7 +3,9 @@
 Autor: Toni David  
 Herausgeber: BHT  
 Kontakt: toda5240@bht-berlin.de  
+
 <br><br><br>
+
 # EP.01 | Dasymetrische Choroplethenkarte (Bevölkerungsdichte Berlins)
 ![image](https://github.com/To-David/B10-DTM/blob/cf572afbcd849946e0471e8133b370fedbe4090b/files/25-04-03_David_%C3%9C1_Planungsr%C3%A4ume-Berlins.png)
 ## Ergebnis
@@ -31,8 +33,8 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 * Annahme „keine Bewohner außerhalb Urban Fabric“ – In Großstädten kaum problematisch, in suburbanen oder ländlichen Kontexten aber eine zu grobe Vereinfachung.
 * Höherer Aufwand – Filter , Auflöse , Verschneidungs  und Join Schritte kosten Zeit und Rechenleistung; jede Aktualisierung der Einwohnerzahlen erfordert ein erneutes Durchlaufen des Workflows.
 
-  <br><br><br>
-  
+<br><br><br>
+
 # EP.02 | Gitterchoroplethenkarte (Kirschbäume Berlins)
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-10_David_%C3%9C2_Kirschbaeume-Berlins.png)
 ## Ergebnis
@@ -60,7 +62,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 * Künstliche Zellgrenzen können reale räumliche Strukturen zerschneiden oder Hot Spots „aufspalten“.
 * Weniger vertraut für Laien als bekannte Bezirkskarten; erfordert Erläuterung im Bericht.
 
-
+<br><br><br>
 
 # EP.03 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-17_David_%C3%9C3_AirBnB-Berlin.png)
@@ -73,7 +75,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
-
+<br><br><br>
 
 # EP.04 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
@@ -86,7 +88,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
-
+<br><br><br>
 
 # EP.05 | 
 ![image](***)
@@ -99,7 +101,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
-
+<br><br><br>
 
 # EP.06 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
@@ -112,7 +114,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
-
+<br><br><br>
 
 # EP.07 | 
 [Gif-Link](https://cloud.acarin.de/s/DTM_EP07_Meshdaten)
@@ -125,7 +127,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
-
+<br><br><br>
 
 # EP.08 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C8_meteor-shower_quadrantids.png)
@@ -138,7 +140,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
-
+<br><br><br>
 
 # EP.09 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C9_2.5d-stadtmodelle_dresen.png)

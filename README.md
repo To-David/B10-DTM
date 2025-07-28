@@ -82,7 +82,6 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 * Visualisierung – Gleichmässiges Raster erzeugt ein regelmässig strukturiertes Kartenbild, das Hot-Spots sofort erkennbar macht.
 ## Nachteile der Methode
 * Verlust lokaler Details – Innerhalb einer 2 km-Zelle können starke Unterschiede verborgen bleiben (z. B. Kiezzentren vs. Nebenstrassen); eine bessere Auflösung war bei dem geforderten A3 Format nicht möglich
-* Gitterartefakte – Zellgrenzen schneiden gewachsene Quartiere; Hot-Spots können unnatürlich gestaffelt erscheinen, wenn sie knapp auf mehrere Zellen verteilt sind.
 * Interpretationshürde – Nicht-fachliche Leserinnen und Leser sind an Bezirksgrenzen gewöhnt; Rasterzellen sind weniger intuitiv verortbar.
 * Parameter-Abhängigkeit – Ergebnisse hängen stark von Rastergrösse und -ausrichtung ab; andere Gittergrössen können andere Muster suggerieren.
 * Symbolüberladung – Mehrere Variablen (Grösse + Farbe + Kategorie) in dicht bebauten Gebieten führen leicht zu visuellem Clutter und erschweren das Kartenlesen.

@@ -1,8 +1,8 @@
 # B10-DTM Abschlussaufgabe SoSe25
 ## Impressum
-Autor: Toni David
-Herausgeber: BHT
-Kontakt: toda5240@bht-berlin.de
+Autor: Toni David  
+Herausgeber: BHT  
+Kontakt: toda5240@bht-berlin.de  
 
 # EP.01 | Dasymetrische Choroplethenkarte
 ![image](https://github.com/To-David/B10-DTM/blob/cf572afbcd849946e0471e8133b370fedbe4090b/files/25-04-03_David_%C3%9C1_Planungsr%C3%A4ume-Berlins.png)

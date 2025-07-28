@@ -32,7 +32,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 * Höherer Aufwand – Filter , Auflöse , Verschneidungs  und Join Schritte kosten Zeit und Rechenleistung; jede Aktualisierung der Einwohnerzahlen erfordert ein erneutes Durchlaufen des Workflows.
 
 # EP.02 | 
-![image](***)
+![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-10_David_%C3%9C2_Kirschbaeume-Berlins.png)
 ## Ergebnis
 
 ## Arbeitsschritte
@@ -43,7 +43,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 
 
 # EP.03 | 
-![image](***)
+![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-17_David_%C3%9C3_AirBnB-Berlin.png)
 ## Ergebnis
 
 ## Arbeitsschritte
@@ -54,7 +54,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 
 
 # EP.04 | 
-![image](***)
+![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
 ## Ergebnis
 
 ## Arbeitsschritte
@@ -76,7 +76,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 
 
 # EP.06 | 
-![image](***)
+![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
 ## Ergebnis
 
 ## Arbeitsschritte
@@ -98,7 +98,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 
 
 # EP.08 | 
-![image](***)
+![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C8_meteor-shower_quadrantids.png)
 ## Ergebnis
 
 ## Arbeitsschritte
@@ -109,7 +109,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 
 
 # EP.09 | 
-![image](***)
+![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C9_2.5d-stadtmodelle_dresen.png)
 ## Ergebnis
 
 ## Arbeitsschritte

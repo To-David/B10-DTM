@@ -31,6 +31,8 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 * Annahme „keine Bewohner außerhalb Urban Fabric“ – In Großstädten kaum problematisch, in suburbanen oder ländlichen Kontexten aber eine zu grobe Vereinfachung.
 * Höherer Aufwand – Filter , Auflöse , Verschneidungs  und Join Schritte kosten Zeit und Rechenleistung; jede Aktualisierung der Einwohnerzahlen erfordert ein erneutes Durchlaufen des Workflows.
 
+
+
 # EP.02 | Gitterchoroplethenkarte (Kirschbäume Berlins)
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-10_David_%C3%9C2_Kirschbaeume-Berlins.png)
 ## Ergebnis
@@ -58,6 +60,8 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 * Künstliche Zellgrenzen können reale räumliche Strukturen zerschneiden oder Hot Spots „aufspalten“.
 * Weniger vertraut für Laien als bekannte Bezirkskarten; erfordert Erläuterung im Bericht.
 
+
+
 # EP.03 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-17_David_%C3%9C3_AirBnB-Berlin.png)
 ## Ergebnis
@@ -67,6 +71,8 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Vorteile der Methode
 
 ## Nachteile der Methode
+
+
 
 
 # EP.04 | 
@@ -80,6 +86,8 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
+
+
 # EP.05 | 
 ![image](***)
 ## Ergebnis
@@ -89,6 +97,8 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Vorteile der Methode
 
 ## Nachteile der Methode
+
+
 
 
 # EP.06 | 
@@ -102,6 +112,8 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
+
+
 # EP.07 | 
 [Gif-Link](https://cloud.acarin.de/s/DTM_EP07_Meshdaten)
 ## Ergebnis
@@ -113,6 +125,8 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Nachteile der Methode
 
 
+
+
 # EP.08 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C8_meteor-shower_quadrantids.png)
 ## Ergebnis
@@ -122,6 +136,8 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Vorteile der Methode
 
 ## Nachteile der Methode
+
+
 
 
 # EP.09 | 

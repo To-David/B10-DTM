@@ -34,13 +34,29 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 # EP.02 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-10_David_%C3%9C2_Kirschbaeume-Berlins.png)
 ## Ergebnis
-
+Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass Kirschbäume in Berlin nicht gleichmäßig verteilt sind. Vor allem im Osten und Südosten Köpenicks und Teilen des Westens Berlins sind kaum oder keine Kirschbäume aufzufinden. Eine solche Analyse ist nur mittels geometrischer Auswertemethoden (z.B. wie hier mittels Hexagone) möglich.
 ## Arbeitsschritte
-
+1.	Datenbeschaffung & Import
+* Bezirksgrenzen und Baumbestand als WFS-Layer aus dem Geoportal Berlin einfügen
+2.	Erstellen des Hexagon¬gitters
+* Menü Vektor → Recherchewerkzeuge → Gitter erzeugen
+* Typ = „Hexagon (Polygone)“, Ausdehnung = Bezirksgrenzen Layer, Seitenlänge 500 m → kurzer Diagonal¬abstand ≈ 866,025 m als horizontale & vertikale Schrittweite eingetragen. 
+3.	Aggregation (räumlicher Join)
+* Verarbeitung → Werkzeugkiste → „Attribute nach Position verknüpfen (Zusammenfassung)“.
+* Ziel Layer = Hexagon Grid, Join Layer = Kirschbaum¬punkte.
+* Operation = Summe der Baumanzahl pro Zelle. 
+4.	Symbolisierung
+* Layer Eigenschaften → Symbolisierung → „Abgestuft“
+* Spalte = Baumanzahl, Klassifizierung nach Jenks, 6 Farben von Grau (0 Bäume) bis Dunkel¬pink (462 Bäume). 
 ## Vorteile der Methode
-
+* Unabhängig von Verwaltungsgrenzen – räumliche Muster werden nicht durch Bezirks  oder Ortsteil¬grenzen verzerrt. 
+* Gleich große Flächen¬einheiten erleichtern statistische Vergleiche (Dichte ↔ Anzahl).
+* Lücken sichtbar: Zellen ohne Punkte (grau) heben baum¬freie Räume sofort hervor. 
+* Flexibel skalierbar – durch Ändern der Zellgröße lässt sich der Detailgrad anpassen.
 ## Nachteile der Methode
-
+* Wahl der Zellgröße beeinflusst das Ergebnis – zu grob ⇒ Details gehen verloren, zu fein ⇒ Karte wird unruhig.
+* Künstliche Zellgrenzen können reale räumliche Strukturen zerschneiden oder Hot Spots „aufspalten“.
+* Weniger vertraut für Laien als bekannte Bezirkskarten; erfordert Erläuterung im Bericht.
 
 # EP.03 | 
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-17_David_%C3%9C3_AirBnB-Berlin.png)

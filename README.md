@@ -1,5 +1,8 @@
-# B10-DTM
-Abschlussaufgabe
+# B10-DTM Abschlussaufgabe SoSe25
+## Impressum
+Autor: Toni David
+Herausgeber: BHT
+Kontakt: toda5240@bht-berlin.de
 
 # EP.01 | Dasymetrische Choroplethenkarte
 ![image](https://github.com/To-David/B10-DTM/blob/cf572afbcd849946e0471e8133b370fedbe4090b/files/25-04-03_David_%C3%9C1_Planungsr%C3%A4ume-Berlins.png)
@@ -28,3 +31,89 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 * Annahme „keine Bewohner außerhalb Urban Fabric“ – In Großstädten kaum problematisch, in suburbanen oder ländlichen Kontexten aber eine zu grobe Vereinfachung.
 * Höherer Aufwand – Filter , Auflöse , Verschneidungs  und Join Schritte kosten Zeit und Rechenleistung; jede Aktualisierung der Einwohnerzahlen erfordert ein erneutes Durchlaufen des Workflows.
 
+# EP.02 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode
+
+
+# EP.03 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode
+
+
+# EP.04 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode
+
+
+# EP.05 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode
+
+
+# EP.06 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode
+
+
+# EP.07 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode
+
+
+# EP.08 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode
+
+
+# EP.09 | 
+![image](***)
+## Ergebnis
+
+## Arbeitsschritte
+
+## Vorteile der Methode
+
+## Nachteile der Methode

@@ -40,27 +40,25 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 ## Ergebnis
 Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass Kirschbäume in Berlin nicht gleichmäßig verteilt sind. Vor allem im Osten und Südosten Köpenicks und Teilen des Westens Berlins sind kaum oder keine Kirschbäume aufzufinden. Eine solche Analyse ist nur mittels geometrischer Auswertemethoden (z.B. wie hier mittels Hexagone) möglich.
 ## Arbeitsschritte
-1.	Datenbeschaffung & Import
-* Bezirksgrenzen und Baumbestand als WFS-Layer aus dem Geoportal Berlin einfügen
-2.	Erstellen des Hexagongitters
-* Menü Vektor → Recherchewerkzeuge → Gitter erzeugen
-* Typ = „Hexagon (Polygone)“, Ausdehnung = Bezirksgrenzen Layer, Seitenlänge 500 m → kurzer Diagonal¬abstand ≈ 866,025 m als horizontale & vertikale Schrittweite eingetragen. 
-3.	Aggregation (räumlicher Join)
-* Verarbeitung → Werkzeugkiste → „Attribute nach Position verknüpfen (Zusammenfassung)“.
-* Ziel Layer = Hexagon Grid, Join Layer = Kirschbaum¬punkte.
-* Operation = Summe der Baumanzahl pro Zelle. 
+1.	Datenbeschaffung – Bezirksgrenzen und Baumbestand als WFS-Layer aus dem Geoportal Berlin einfügen
+2.	Erstellen des Hexagongitters – Menü Vektor → Recherchewerkzeuge → Gitter erzeugen
+* Typ = „Hexagon (Polygone)“, Ausdehnung = Bezirksgrenzen Layer
+* Seitenlänge 500 m → kurzer Diagonal¬abstand ≈ 866,025 m als horizontale & vertikale Schrittweite eingetragen. 
+3.	Aggregation (räumlicher Join) – Verarbeitung → Werkzeugkiste → „Attribute nach Position verknüpfen (Zusammenfassung)“
+* Ziel Layer = Hexagon Grid, Join Layer = Kirschbaumpunkte
+* Operation = Summe der Baumanzahl pro Zelle
 4.	Symbolisierung
 * Layer Eigenschaften → Symbolisierung → „Abgestuft“
-* Spalte = Baumanzahl, Klassifizierung nach Jenks, 6 Farben von Grau (0 Bäume) bis Dunkel¬pink (462 Bäume). 
+* Spalte = Baumanzahl, Klassifizierung nach Jenks, 6 Farben von Grau (0 Bäume) bis Dunkel¬pink (462 Bäume)
 ## Vorteile der Methode
-* Unabhängig von Verwaltungsgrenzen – räumliche Muster werden nicht durch Bezirks  oder Ortsteil¬grenzen verzerrt. 
-* Gleich große Flächen¬einheiten erleichtern statistische Vergleiche (Dichte ↔ Anzahl).
-* Lücken sichtbar: Zellen ohne Punkte (grau) heben baum¬freie Räume sofort hervor. 
-* Flexibel skalierbar – durch Ändern der Zellgröße lässt sich der Detailgrad anpassen.
+* Unabhängig von Verwaltungsgrenzen – räumliche Muster werden nicht durch Bezirks- oder Ortsteilgrenzen verzerrt
+* Gleich große Flächeneinheiten erleichtern statistische Vergleiche (Dichte ↔ Anzahl)
+* Lücken sichtbar – Zellen ohne Punkte (grau) heben baumfreie Räume sofort hervor
+* Flexibel skalierbar – durch Ändern der Zellgröße lässt sich der Detailgrad anpassen
 ## Nachteile der Methode
-* Wahl der Zellgröße beeinflusst das Ergebnis – zu grob ⇒ Details gehen verloren, zu fein ⇒ Karte wird unruhig.
-* Künstliche Zellgrenzen können reale räumliche Strukturen zerschneiden oder Hot Spots „aufspalten“.
-* Weniger vertraut für Laien als bekannte Bezirkskarten; erfordert Erläuterung im Bericht.
+* Wahl der Zellgröße beeinflusst das Ergebnis – zu grob ⇒ Details gehen verloren, zu fein ⇒ Karte wird unruhig
+* Künstliche Zellgrenzen können reale räumliche Strukturen zerschneiden oder Hot Spots „aufspalten“
+* Weniger vertraut für Laien als bekannte Bezirkskarten; erfordert Erläuterung im Bericht
 
 <br><br><br>
 

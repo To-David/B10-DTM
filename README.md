@@ -3,9 +3,9 @@ Abschlussaufgabe
 
 # EP.01 | Dasymetrische Choroplethenkarte
 ## Ergebnis
-Die fertige A 3 Platte umfasst zwei eigenständige Darstellungen der Bevölkerungsdichte in Berlins Planungsräumen (PLR):
+Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungsdichte in Berlins Planungsräumen:
 * Einfache Choroplethenkarte. Hier wird die Bevölkerungszahl jedes Planungsraums auf dessen Gesamtfläche bezogen. Die Dichte wurde in QGIS aus dem Ausdruck EW / ($area / 10 000) berechnet und anschließend mit dem Klassifikationsmodus Natürliche Unterbrechungen (Jenks) in fünf Farbstufen visualisiert.
-* Dasymetrische Choroplethenkarte. Für dieselbe Kennzahl wurde zunächst das Corine Land Cover Shapefile gefiltert, sodass nur die urbanen Klassen 111 und 112 (Urban Fabric) übrigblieben. Nach dem Auflösen dieser Polygone zu einem einzigen bewohnten Flächenlayer wurde er mit den Planungsräumen verschnitten. Alle nicht bebauten Teilflächen erscheinen grau und gehen nicht in die Flächen  oder Dichteberechnung ein. Dadurch liegen die Dichtewerte deutlich höher und die Kontraste schärfer als in der einfachen Karte.
+* Dasymetrische Choroplethenkarte. Zunächst wurde das Corine Land Cover Shapefile gefiltert, sodass nur die urbanen Klassen 111 und 112 (Urban Fabric) übrigblieben. Nach dem Auflösen dieser Polygone zu einem einzigen bewohnten Flächenlayer wurde er mit den Planungsräumen verschnitten. Alle nicht bebauten Teilflächen erscheinen grau und gehen nicht in die Flächen- oder Dichteberechnung ein. Dadurch liegen die Dichtewerte deutlich höher als in der einfachen Karte.
 ## Arbeitsschritte
 1.	Datenbeschaffung. Die PLR Shapefile (LOR 2021) sowie die Einwohnerzahlen (CSV, Stand 1/2023) wurden von der Berliner Senatsverwaltung heruntergeladen.
 2.	Vorbereitung der PLR Geometrie. In der Attributtabelle wurde eine neue Ganzzahl Spalte mit PLR_ID angelegt, weil QGIS nur gleich getypte Felder verknüpfen kann (Aktualitätsnotiz aus eigener Erfahrung).

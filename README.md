@@ -87,7 +87,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 
 
 # EP.07 | 
-![image](https://cloud.acarin.de/s/DTM_EP07_Meshdaten)
+[Gif-Link](https://cloud.acarin.de/s/DTM_EP07_Meshdaten)
 ## Ergebnis
 
 ## Arbeitsschritte

@@ -104,7 +104,7 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 <br><br>
 <a id="EP.04"></a>
 <br>
-# EP.04 | Alpha-by-Value ( Bundestagswahl 2021/25)
+# EP.04 | Alpha-by-Value (Bundestagswahl 2021/25)
 ![image](https://github.com/To-David/B10-DTM/blob/9d39f689f44bff8a86cf113991f89a6287f4e36b/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen.png)
 
 
@@ -139,7 +139,7 @@ Eine Weitere Karte wurde für den Zuwachs der Afd zwischen 2021 und 2025 erstell
 <br><br>
 <a id="EP.05"></a>
 <br>
-# EP.05 | Tile-Mapping (Anteil der Zulassungsbeschränkte Studiengänge je Bundesland)
+# EP.05 | Tile-Mapping (Anteil der zulassungsbeschränkten Studiengänge je Bundesland)
 ![image](https://github.com/To-David/B10-DTM/blob/ce815194d411cfa91d97f0d35069a25f3b9d8d23/files/25-05-15_David_%C3%9C5_NC.png)
 ## Ergebnis
 Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Anteil zulassungsbeschränkter Studiengänge zwischen den Bundesländern variiert. Stadtstaaten und hochschulstarke westdeutsche Länder weisen die höchsten Quoten auf, während mehrere Flächenländer im Osten deutlich unter dem Bundesdurchschnitt liegen. 
@@ -170,7 +170,7 @@ Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Ant
 <br><br>
 <a id="EP.06"></a>
 <br>
-# EP.06 | 
+# EP.06 | Flowmaps (Syrische Flüchtlinge 2010-2024)
 ![image](https://github.com/To-David/B10-DTM/blob/85770d4b2ec99e0dfab818f12af690dba4be69fa/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
 ## Ergebnis
 

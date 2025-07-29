@@ -147,7 +147,7 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 <a id="EP.07"></a>
 <br>
 # EP.07 | 
-[Gif-Link](https://cloud.acarin.de/s/DTM_EP07_Meshdaten)
+![image](https://github.com/To-David/B10-DTM/blob/ccf2f138f1fb91aedf499ebe413b8016ca8b6b05/files/25-06-12_David_%C3%9C7_orkan-kyrill.gif)
 ## Ergebnis
 
 ## Arbeitsschritte

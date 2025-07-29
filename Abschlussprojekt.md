@@ -119,7 +119,7 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 <a id="EP.05"></a>
 <br>
 # EP.05 | 
-![image](***)
+![image](https://github.com/To-David/B10-DTM/blob/ce815194d411cfa91d97f0d35069a25f3b9d8d23/files/25-05-15_David_%C3%9C5_NC.png)
 ## Ergebnis
 
 ## Arbeitsschritte

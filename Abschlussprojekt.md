@@ -173,27 +173,56 @@ Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Ant
 # EP.06 | Flowmaps (Syrische Flüchtlinge 2010-2024)
 ![image](https://github.com/To-David/B10-DTM/blob/85770d4b2ec99e0dfab818f12af690dba4be69fa/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
 ## Ergebnis
-
+Zwischen 2010 und 2024 verließen rund 7 Mio. Flüchtlinge Syrien. Die Fluchtströme lassen sich in fünf Größenklassen gliedern (10.000 – 3,2 Mio). Der räumliche Schwerpunkt blieb klar auf Syriens Nachbarländern; europäische Ziele traten v. a. ab 2014 / 2015 hinzu und verstetigten sich bis 2024. 
 ## Arbeitsschritte
-
+1. Datenbeschaffung – UNHCR Flüchtlingszahlen und weltweite Landesgeometrien herunterladen
+2. Tabellen Aufbereitung – Pivot Tabelle (Spalten = Jahr, Zeilen = Asylstaat ISO, Werte = Summe Flüchtlinge) erstellen, bereinigte Tabelle als CSV exportieren
+3. Layer Import – Länderflächen sowie CSV in QGIS laden; CSV ohne Geometrie als Text Layer einbinden
+4. Zentroid Berechnung – Mittelpunkte aller Staaten erzeugen und gegebenenfalls bei Überseegebieten korrigieren
+5. Projektion – Eigene orthographische Projektion (+proj = ortho, lat₀ = 50,3°, lon₀ = 30,3°) anlegen, um eine Globus¬ansicht abzubilden
+6. Geometrie Join – CSV über ISO Code mit Zentroid Layer verknüpfen
+7. Linien Generierung – Im Feld¬rechner feste Ursprung¬koordinaten (Syrien) und Ziel¬koordinaten ($x, $y) anlegen; „XY → Linie“ Werkzeug ausführen
+8. Symbolisierung
+* Linienbreite nach Flüchtlingszahl staffeln (5 Klassen)
+* Syrien als roten, groß¬zügig skalierten Punkt kennzeichnen
+* Ozeanflächen dunkelblau / shapeburst füllen, um Globus¬effekt zu erzielen
 ## Vorteile der Methode
-
+* Räumliche Kontextualisierung – Herkunft und Ziel stehen in direktem Bezug, Richtung & Distanz sind sofort erkennbar
+* Vergleichbarkeit – Graduierte Linienbreiten ermöglichen einen schnellen quantitativen Vergleich zwischen Aufnahmestaaten
+* Visuelle Attraktivität – Orthographische Projektion liefert eine eingängige, fast globus¬ähnliche Darstellung, die auch Laien anspricht
 ## Nachteile der Methode
-
+* Linienüberlagerung – Viele ähnliche Pfade können das Bild überfrachten und Details verdecken, Libanon mit dem zweitgrößten Anteil wird komplett verdeckt
+* Zentroid Ungenauigkeit – Staaten mit Überseegebieten erhalten falsche Mittelpunkte und müssen händisch korrigiert werden
+* Begrenzter Ausschnitt – Die orthographische Projektion zeigt nur die halbe Erde; z. B. Amerika liegt außerhalb des Sichtfelds, Randgeometrien werden teilweise nicht korrekt dargestellt (z.B. gerade Linien bei Brasilien, Kanada) 
 
 <br><br>
 <a id="EP.07"></a>
 <br>
-# EP.07 | 
+# EP.07 | Mesh-Daten (Orkan Kyrill)
 ![image](https://github.com/To-David/B10-DTM/blob/ccf2f138f1fb91aedf499ebe413b8016ca8b6b05/files/25-06-12_David_%C3%9C7_orkan-kyrill.gif)
 ## Ergebnis
-
+Eine animierte GIF Sequenz zeigt, wie Orkan Kyrill im Januar 2007 mit seinen Windfeldern über Deutschland hinwegzieht. Jedes Frame enthält Datum und Uhrzeit, sowie die Windvektoren aus dem GRIB Mesh Datensatz. Das Endprodukt lässt sich in Präsentationen oder Online Plattformen einbinden und vermittelt auch Fachfremden den Verlauf des Sturms anschaulich.
 ## Arbeitsschritte
-
+1. Datenbeschaffung – Verwaltungsgrenzen Deutschlands und den GRIB Datensatz mit Windgeschwindigkeiten herunterladen (10m u-component of wind, 10m v-component of wind)
+2. Symbolisierung – Mesh Layer auf Vektor Darstellung umstellen, passendes Farbschema wählen
+3. Zeitsteuerung – Layereigenschaft „Zeitlich“ einstellen
+4. Zeitstempel – neuen Punkt Layer anlegen
+* Symbol auf transparent setzen
+* Beschriftung: format_date(@map_start_time, 'd. MMMM yyyy') || '\n'  || format_date(@map_start_time, 'HH:mm')
+* Zeitlich: „Nur Layer neuzeichnen“
+5. Kartenlayout – Ansicht → Dekorationen: Maßstab, Titel, Impressum anlegen
+6. Export – Animation mit dem Uhr Werkzeug abspielen und einzelne Frames als PNG ausgeben
+7. Post Processing – Bildserie in Photoshop zu einem GIF Datei zusammenfügen [Guide](https://www.adobe.com/africa/learn/photoshop/web/make-animated-gif)
 ## Vorteile der Methode
-
+* Intuitive Visualisierung des Sturmverlaufs
+* Verständlich ohne meteorologische Fachkenntnisse
+* Hohe gestalterische Freiheit (Farben, Vektorpfeile, Geschwindigkeit)
+* Ergebnis ist plattform¬unabhängig und schnell teilbar
 ## Nachteile der Methode
-
+* Exakte Zahlenwerte fehlen; eine Legende lässt sich nur schwer integrieren
+* GIFs können in der Regel weder pausiert noch zurückgespult werden
+* Die eigentliche GIF Erstellung erfolgt außerhalb von QGIS und erfordert Zusatztools
+* Dateigröße kann auf Onlineplattformen schnell zu einem Problem werden (Auflösung, Bittiefe und/oder Anzahl der Frames muss reduziert werden)
 
 <br><br>
 <a id="EP.08"></a>

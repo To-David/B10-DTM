@@ -105,7 +105,10 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 <a id="EP.04"></a>
 <br>
 # EP.04 | 
-![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
+![image](https://github.com/To-David/B10-DTM/blob/9d39f689f44bff8a86cf113991f89a6287f4e36b/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen.png)
+[Zuwachs der AfD](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
+
+
 ## Ergebnis
 
 ## Arbeitsschritte

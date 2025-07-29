@@ -110,13 +110,29 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 
 
 ## Ergebnis
-
+Die Auswertung liefert je Wahljahr eine thematische Karte, in der jeder Wahlkreis in der Parteifarbe der siegreichen Zweitstimme eingefärbt ist. Die Deckkraft der Fläche steigt proportional zum Stimmenanteil der Gewinnerpartei. So werden auf einen Blick sowohl der Wahlsieger als auch die Stärke seines Vorsprungs sichtbar, was den Vergleich zwischen 2021 und 2025 erleichtert. 
+Anmerkung: Beim Export wurden die Farben verzerrt. Besonders deutlich wird dies beim Rot der SPD.
 ## Arbeitsschritte
-
+1. Datenbeschaffung – Wahlkreis Shapefile sowie finale Zweitstimmenergebnisse 2025 und 2021 von der Bundeswahlleiterin herunterladen. 
+2. Datenaufbereitung – In einer Tabellenkalkulation alle irrelevanten Spalten/Zeilen löschen, nur Zweitstimmen der Parteien SPD, CDU/CSU, Grüne, Linke und AfD behalten, CSU Werte in Bayern zur CDU addieren, anschließend als CSV speichern. 
+3. Import – Shapefile und CSV in QGIS laden; Wahlkreisnummer als Integer definieren und korrektes Trennzeichen wählen.
+4. Verknüpfung – CSV mit Geometrien per Wahlkreisnummer („WKR_NR“) joinen.
+5. Attributberechnung – Neue Felder erzeugen
+* g_value (Stimmenzahl der Gewinnerpartei) array_max( array( "SPD" , "CDU" , "Gruenen" , "AFD" , "Linke"))
+* g_name (Name der Gewinnerpartei - ) with_variable( 'maxVal', array_max( array( "SPD" , "CDU" , "Gruenen" , "AFD" , "Linke")), CASE WHEN "SPD" = @maxVal THEN 'SPD' WHEN "CDU" = @maxVal THEN 'CDU' WHEN "Gruenen" = @maxVal THEN 'Gruenen' WHEN "AFD" = @maxVal THEN 'AFD' WHEN "Linke" = @maxVal THEN 'Linke' END)
+* g_proz_gueltig (Anteil an gültigen Stimmen) "G_value" / "gueltig" *100
+6. Symbolisierung – Regelbasierte Darstellung pro Partei (z.B. Regel: „g_name“ = ‚SPD‘ und Beschriftung: ‚SPD‘)
+* anschließend eine Regel für Alpha anlegen
+* Intensität des Kanals wird über den folgenden Ausdruck geregelt: set_color_part( 'black','alpha',scale_linear( "g_percent", 19,47,255,0))
 ## Vorteile der Methode
-
+* Informationsdichte – Parteifarben zeigen den Sieger, die Transparenz dessen Stimmenanteil; zwei Kennzahlen in einer Kartenebene.
+* Intuitive Lesbarkeit – Bekanntes Farbschema der Parteien macht die Karte ohne umfangreiche Legende verständlich.
+* Homogene Datenquelle – Alle Ausgangsdaten stammen von derselben Behörde, wodurch Kompatibilitätsprobleme minimiert werden.
 ## Nachteile der Methode
-
+* Farbüberschneidungen – Ähnliche Farbtöne (z. B. helles Rot vs. Rosa) können die Siegerpartei verschleiern und reduzieren die Anzahl unterscheidbarer Kategorien.
+* Manueller Aufwand – Das händische Säubern und Umstrukturieren der Wahldaten ist zeitintensiv und fehleranfällig.
+* Lesbarkeit bei vielen Parteien – Je mehr Kategorien eingefärbt werden müssen, desto eher leidet die Klarheit der Darstellung.
+* Alpha Skalierung – Bei knappen Ergebnissen kann der Transparenzeffekt zu schwach sein, bei Erdrutschsiegen zu dominant. 
 
 <br><br>
 <a id="EP.05"></a>

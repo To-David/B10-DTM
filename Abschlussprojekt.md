@@ -26,7 +26,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 * Einfache Choroplethenkarte – Hier wird die Bevölkerungszahl jedes Planungsraums auf dessen Gesamtfläche bezogen. Die Dichte wurde in QGIS aus dem Ausdruck EW / ($area / 10 000) berechnet und anschließend mit dem Klassifikationsmodus Natürliche Unterbrechungen (Jenks) in fünf Farbstufen visualisiert.
 * Dasymetrische Choroplethenkarte – Zunächst wurde das Corine Land Cover Shapefile gefiltert, sodass nur die urbanen Klassen 111 und 112 (Urban Fabric) übrigblieben. Nach dem Auflösen dieser Polygone zu einem einzigen bewohnten Flächenlayer wurde er mit den Planungsräumen verschnitten. Alle nicht bebauten Teilflächen erscheinen grau und gehen nicht in die Flächen- oder Dichteberechnung ein. Dadurch liegen die Dichtewerte deutlich höher als in der einfachen Karte.
 ## Arbeitsschritte
-1.	Datenbeschaffung – Die Shapefile der Planungsräume Berlins (LOR 2021) sowie die Einwohnerzahlen (CSV, Stand 1/2023) wurden von der Berliner Senatsverwaltung heruntergeladen.
+1.	Datenbeschaffung – Die Shapefile der Planungsräume Berlins ([LOR 2021](https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/sozialraumorientierte-planungsgrundlagen/lebensweltlich-orientierte-raeume/)) sowie die Einwohnerzahlen ([CSV, Stand 1/2023](https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabellen/)) wurden von der Berliner Senatsverwaltung heruntergeladen.
 2.	Aufbereitung der CSV – Überflüssige Kopfzeilen und Spalten wurden in Excel entfernt; 1000er Trennpunkte deaktiviert; beim Import nach QGIS erhielten sowohl PLR Nummer als auch Einwohnerzahl den Datentyp Ganzzahl.
 3.	Join – Mit „Attribute nach Feldwert verbinden“ wurden die Einwohnerzahlen an die PLR Geometrien angefügt. Damit war der Layer für die einfache Choroplethenkarte vollständig.
 4.	Klassifizierung & Layout – In den Layereigenschaften wurde EW / ($area / 10 000) als Ausdruck hinterlegt, Jenks Klassen gewählt und Farben angepasst; Anzahl, Grenzwerte und Legende wurden manuell verfeinert.
@@ -54,7 +54,7 @@ Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungs
 ## Ergebnis
 Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass Kirschbäume in Berlin nicht gleichmäßig verteilt sind. Vor allem im Osten und Südosten Köpenicks und Teilen des Westens Berlins sind kaum oder keine Kirschbäume aufzufinden. Eine solche Analyse ist nur mittels geometrischer Auswertemethoden (z.B. wie hier mittels Hexagone) möglich.
 ## Arbeitsschritte
-1.	Datenbeschaffung – Bezirksgrenzen und Baumbestand als WFS-Layer aus dem Geoportal Berlin einfügen
+1.	Datenbeschaffung – Bezirksgrenzen und Baumbestand als WFS-Layer aus dem [Geoportal Berlin](https://fbinter.stadt-berlin.de/fb/index.jsp) einfügen
 2.	Erstellen des Hexagongitters – Menü Vektor → Recherchewerkzeuge → Gitter erzeugen
 * Typ = „Hexagon (Polygone)“, Ausdehnung = Bezirksgrenzen Layer
 * Seitenlänge 500 m → kurzer Diagonal¬abstand ≈ 866,025 m als horizontale & vertikale Schrittweite eingetragen. 
@@ -82,7 +82,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 ## Ergebnis
 Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die innerstädtischen Bezirke konzentrieren. In den 2x2 km-Zellen von Mitte, Kreuzberg, Friedrichshain und Prenzlauer Berg treten sowohl die höchsten Angebotszahlen (bis > 350 Wohnungen/Häuser pro Raster) als auch die höchsten Durchschnittspreise (> 200 EUR/Nacht) auf. In den Außenbezirken nimmt die Zahl der Inserate deutlich ab, und die Preise liegen überwiegend unter 100 EUR/Nacht. Hotelzimmer häufen sich erwartungsgemäß im touristischen Zentrum innerhalb der S-Bahn-Ringbahn, während geteilte und private Zimmer häufiger in angrenzenden Wohngebieten erscheinen. Insgesamt erlaubt das gleichmäßige Raster, Hot-Spots schnell zu erkennen.
 ## Arbeitsschritte
-1.	Datenbeschaffung – InsideAirBnB-Portal -> listings.csv (Quelldaten aufbereiten -> auf Extremwerte achten, NULL-Werte entfernen)
+1.	Datenbeschaffung – [InsideAirBnB-Portal](https://insideairbnb.com/) -> listings.csv (Quelldaten aufbereiten -> auf Extremwerte achten, NULL-Werte entfernen)
 2.	Datenimport in QGIS – CSV als Punktgeometrie importieren
 3.	Attributaufbereitung und Join – Preis (price) und Objekt-ID zusammenfassen; Anzahl und Durchschnitt pro Typ berechnen.
 4.	Rastererstellung – 2x2 km Grid über das Stadtgebiet generieren; Spatial Join -> Zuteilung jeder Anzeige zur entsprechenden Rasterzelle
@@ -115,7 +115,7 @@ Anmerkung: Beim Export wurden die Farben verzerrt. Besonders deutlich wird dies 
 Eine Weitere Karte wurde für den Zuwachs der Afd zwischen 2021 und 2025 erstellt: 
 [Zuwachs der AfD](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
 ## Arbeitsschritte
-1. Datenbeschaffung – Wahlkreis Shapefile sowie finale Zweitstimmenergebnisse 2025 und 2021 von der Bundeswahlleiterin herunterladen. 
+1. Datenbeschaffung – Wahlkreis Shapefile sowie finale Zweitstimmenergebnisse 2025 und 2021 von der Bundeswahlleiterin [herunterladen](https://www.bundeswahlleiterin.de/bundestagswahlen/2025/wahlkreiseinteilung/downloads.html). 
 2. Datenaufbereitung – In einer Tabellenkalkulation alle irrelevanten Spalten/Zeilen löschen, nur Zweitstimmen der Parteien SPD, CDU/CSU, Grüne, Linke und AfD behalten, CSU Werte in Bayern zur CDU addieren, anschließend als CSV speichern. 
 3. Import – Shapefile und CSV in QGIS laden; Wahlkreisnummer als Integer definieren und korrektes Trennzeichen wählen.
 4. Verknüpfung – CSV mit Geometrien per Wahlkreisnummer („WKR_NR“) joinen.
@@ -176,7 +176,7 @@ Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Ant
 Zwischen 2010 und 2024 verließen rund 7 Mio. Flüchtlinge Syrien. Die Fluchtströme lassen sich in fünf Größenklassen gliedern (10.000 – 3,2 Mio). Der räumliche Schwerpunkt blieb klar auf Syriens Nachbarländern; europäische Ziele traten v. a. ab 2014 / 2015 hinzu und verstetigten sich bis 2024. 
 Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
-1. Datenbeschaffung – UNHCR Flüchtlingszahlen und weltweite Landesgeometrien herunterladen
+1. Datenbeschaffung – [UNHCR Flüchtlingszahlen](https://www.unhcr.org/refugee-statistics/download) und weltweite [Landesgeometrien](https://www.naturalearthdata.com/downloads/) herunterladen
 2. Tabellen Aufbereitung – Pivot Tabelle (Spalten = Jahr, Zeilen = Asylstaat ISO, Werte = Summe Flüchtlinge) erstellen, bereinigte Tabelle als CSV exportieren
 3. Layer Import – Länderflächen sowie CSV in QGIS laden; CSV ohne Geometrie als Text Layer einbinden
 4. Zentroid Berechnung – Mittelpunkte aller Staaten erzeugen und gegebenenfalls bei Überseegebieten korrigieren
@@ -204,7 +204,7 @@ Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x10
 ## Ergebnis
 Eine animierte GIF Sequenz zeigt, wie Orkan Kyrill im Januar 2007 mit seinen Windfeldern über Deutschland hinwegzieht. Jedes Frame enthält Datum und Uhrzeit, sowie die Windvektoren aus dem GRIB Mesh Datensatz. Das Endprodukt lässt sich in Präsentationen oder Online Plattformen einbinden und vermittelt auch Fachfremden den Verlauf des Sturms anschaulich.
 ## Arbeitsschritte
-1. Datenbeschaffung – Verwaltungsgrenzen Deutschlands und den GRIB Datensatz mit Windgeschwindigkeiten herunterladen (10m u-component of wind, 10m v-component of wind)
+1. Datenbeschaffung – Verwaltungsgrenzen Deutschlands und den GRIB Datensatz mit Windgeschwindigkeiten [herunterladen](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download) (10m u-component of wind, 10m v-component of wind)
 2. Symbolisierung – Mesh Layer auf Vektor Darstellung umstellen, passendes Farbschema wählen
 3. Zeitsteuerung – Layereigenschaft „Zeitlich“ einstellen
 4. Zeitstempel – neuen Punkt Layer anlegen
@@ -234,7 +234,7 @@ Eine animierte GIF Sequenz zeigt, wie Orkan Kyrill im Januar 2007 mit seinen
 Eine statische Karte zeigt alle in der Nacht vom 3./4. Januar 2025 erfassten Quadrantid Meteore über Europa – jede Bahn als farblich abgestufte Linie vom Eintrittpunkt bis zum Verglühen.
 Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
-1. Datenbeschaffung – Quadrantid Messungen für den 3./4. 01 2025 als CSV von der öffentlichen Meteor-Map herunterladen. 
+1. Datenbeschaffung – Quadrantid Messungen für den 3./4. 01 2025 als CSV von der öffentlichen Meteor-Map [herunterladen](https://tammojan.github.io/meteormap/). 
 2. Datenaufbereitung – für eine Animation wäre Datum/ Zeit in einem korrekten QGIS-Format notwendig (hier wird nur die Gesamtheit der Meteore dieser Nacht in einer PNG dargestellt) 
 3. Geometrieerzeugung – mit „Geometrie nach Ausdruck“ eine Linie aus Start  und Endkoordinate jeder Spur generieren.
 4. Hintergrund – Europäische Ländergrenzen (Natural Earth) hinzufügen. 
@@ -254,16 +254,16 @@ Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x10
 <a id="EP.09"></a>
 <br>
 # EP.09 | 2.5D-Gebäudemodelle (Dresden)
-![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C9_2.5d-stadtmodelle_dresen.png)
+![image](https://github.com/To-David/B10-DTM/blob/09d09690cfac0a0d761528937ae207cf0be9d96b/files/25-06-26_David_%C3%9C9_2.5d-stadtmodelle_dresen_final.png)
 ## Ergebnis
-Für einen kleinen Teil des Dresdner Stadtgebiet wurde eine Karte erzeugt, welche ein 2,5 D Gebäudemodell darstellt. Dabei wurden die Höhen aus den öffentlich zugänglichen Shapefiles erzeugt.
+Für einen kleinen Teil des Dresdner Stadtgebiet wurde eine Karte erzeugt, welche ein 2,5D Gebäudemodell darstellt. Dabei wurden die Höhen aus den öffentlich zugänglichen Shapefiles erzeugt.
 ## Arbeitsschritte
-1. Datenbeschaffung – offene 3 D Gebäudedaten für den gewünschten Ausschnitt herunterladen und in QGIS laden 
-2. Symbolisierung – in den Layer Eigenschaften den Stil 2.5 D wählen, „H_Objekt“ als Höhenattribut setzen, Blickwinkel auf 90 ° stellen und Schatten für besser Performance deaktivieren
+1. Datenbeschaffung – offene 3D Gebäudedaten für den gewünschten Ausschnitt [herunterladen](https://www.geodaten.sachsen.de/downloadbereich-digitale-3d-stadtmodelle-4875.html) und in QGIS importieren 
+2. Symbolisierung – in den Layer Eigenschaften den Stil 2.5 D wählen, „H_Objekt“ als Höhenattribut setzen, Blickwinkel auf 90° stellen und Schatten für besser Performance deaktivieren
 3. Farbverlauf – zum Einzelsymbol zurückkehren, untere Einfache Füllung auf Gradientenfüllung umstellen, konischen Verlauf definieren, Koordinatenmodus auf Ansichtsfenster und Spreizung auf Reflektieren stellen 
 4. 3 D Parameter – im Reiter 3D Ansicht den Offset als Ausdruck „H_Objekt – H_Absolut“ setzen, um korrekte Gebäudehöhen zu erhalten
 5. Navigation – über Ansicht → 3D Kartenansicht ein Fenster öffnen und das Modell interaktiv prüfen 
-6. Export – gewünschte Kameraperspektive festlegen und als PNG ausgeben; GIF Erstellung wird übersprungen (nicht benötigt), Alternativ Layout erstellen und drucken
+6. Export – gewünschte Kameraperspektive festlegen und als PNG ausgeben; GIF Erstellung wird übersprungen (nicht benötigt), alternativ Layout erstellen und drucken
 ## Vorteile der Methode
 * Open Source – alle Schritte lassen sich mit QGIS ohne externe Software
 * Schnelle Umsetzung – wenige Einstellungen genügen, um ein realitätsnahes 2.5D Modell zu erzeugen 

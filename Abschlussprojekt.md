@@ -77,7 +77,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 <br><br>
 <a id="EP.03"></a>
 <br>
-# EP.03 | 
+# EP.03 | Punktrasterkarten (AirBnB Berlin)
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-17_David_%C3%9C3_AirBnB-Berlin.png)
 ## Ergebnis
 Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die innerstädtischen Bezirke konzentrieren. In den 2x2 km-Zellen von Mitte, Kreuzberg, Friedrichshain und Prenzlauer Berg treten sowohl die höchsten Angebotszahlen (bis > 350 Wohnungen/Häuser pro Raster) als auch die höchsten Durchschnittspreise (> 200 EUR/Nacht) auf. In den Außenbezirken nimmt die Zahl der Inserate deutlich ab, und die Preise liegen überwiegend unter 100 EUR/Nacht. Hotelzimmer häufen sich erwartungsgemäß im touristischen Zentrum innerhalb der S-Bahn-Ringbahn, während geteilte und private Zimmer häufiger in angrenzenden Wohngebieten erscheinen. Insgesamt erlaubt das gleichmäßige Raster, Hot-Spots schnell zu erkennen.
@@ -104,7 +104,7 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 <br><br>
 <a id="EP.04"></a>
 <br>
-# EP.04 | 
+# EP.04 | Alpha-by-Value ( Bundestagswahl 2021/25)
 ![image](https://github.com/To-David/B10-DTM/blob/9d39f689f44bff8a86cf113991f89a6287f4e36b/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen.png)
 
 
@@ -142,13 +142,30 @@ Eine Weitere Karte wurde für den Zuwachs der Afd zwischen 2021 und 2025 erstell
 # EP.05 | 
 ![image](https://github.com/To-David/B10-DTM/blob/ce815194d411cfa91d97f0d35069a25f3b9d8d23/files/25-05-15_David_%C3%9C5_NC.png)
 ## Ergebnis
-
+Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Anteil zulassungsbeschränkter Studiengänge zwischen den Bundesländern variiert. Stadtstaaten und hochschulstarke westdeutsche Länder weisen die höchsten Quoten auf, während mehrere Flächenländer im Osten deutlich unter dem Bundesdurchschnitt liegen. 
 ## Arbeitsschritte
-
+1. Datenvorbereitung – CSV Tabelle
+* Liste der Länderkürzel und Namen anlegen
+* Spalte mit Prozentwerten der zulassungsbeschränkten Studiengänge ergänzen
+* Datei als CSV speichern
+2. Grundlage – Gitter erzeugen
+* Rechteckiges Raster über Deutschland skizzieren
+* Sechzehn Zellen auswählen, die der Lage der Bundesländer möglichst gut entsprechen
+3. Geometrie anpassen – Verschieben & Skalieren
+* Kacheln gemäß Aufgabenstellung in einem 4x4 Raster anordnen, sodass die relative geographische Lage weitestgehend erhalten bleibt.
+4. Attributpflege – Kürzel zuweisen
+* Neue Spalte im Kachel Layer erstellen
+* Jede Zelle mit passendem Länderkürzel versehen
+5. Tabellenverknüpfung – Join nach Feldwert
+* CSV per Länderkürzel mit dem Kachel Layer verbinden
+6. Symbolisierung – Abgestufte Darstellung
+* Farbverlauf auf die Prozentspalte anwenden
 ## Vorteile der Methode
-
+* Tile Mapping – klare Lesbarkeit: Gleich große Felder eliminieren Flächenverzerrung und erleichtern den Vergleich
+* Bearbeitung in QGIS – geringe Softwarehürde: Alle Schritte lassen sich mit Bordmitteln ohne Zusatzplugins ausführen
 ## Nachteile der Methode
-
+* Tile Mapping – begrenzte Genauigkeit: Stadtstaaten wie Berlin oder Bremen lassen sich nur annähernd platzieren
+* Einheitsgröße – Informationsverlust: Flächenbezogene Aspekte (z. B. Hochschuldichte) gehen verloren
 
 <br><br>
 <a id="EP.06"></a>

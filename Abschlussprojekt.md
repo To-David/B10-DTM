@@ -139,7 +139,7 @@ Eine Weitere Karte wurde für den Zuwachs der Afd zwischen 2021 und 2025 erstell
 <br><br>
 <a id="EP.05"></a>
 <br>
-# EP.05 | 
+# EP.05 | Tile-Mapping (Anteil der Zulassungsbeschränkte Studiengänge je Bundesland)
 ![image](https://github.com/To-David/B10-DTM/blob/ce815194d411cfa91d97f0d35069a25f3b9d8d23/files/25-05-15_David_%C3%9C5_NC.png)
 ## Ergebnis
 Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Anteil zulassungsbeschränkter Studiengänge zwischen den Bundesländern variiert. Stadtstaaten und hochschulstarke westdeutsche Länder weisen die höchsten Quoten auf, während mehrere Flächenländer im Osten deutlich unter dem Bundesdurchschnitt liegen. 

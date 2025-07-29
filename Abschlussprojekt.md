@@ -174,7 +174,7 @@ Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Ant
 ![image](https://github.com/To-David/B10-DTM/blob/85770d4b2ec99e0dfab818f12af690dba4be69fa/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
 ## Ergebnis
 Zwischen 2010 und 2024 verließen rund 7 Mio. Flüchtlinge Syrien. Die Fluchtströme lassen sich in fünf Größenklassen gliedern (10.000 – 3,2 Mio). Der räumliche Schwerpunkt blieb klar auf Syriens Nachbarländern; europäische Ziele traten v. a. ab 2014 / 2015 hinzu und verstetigten sich bis 2024. 
-Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
+<br>Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
 1. Datenbeschaffung – [UNHCR Flüchtlingszahlen](https://www.unhcr.org/refugee-statistics/download) und weltweite [Landesgeometrien](https://www.naturalearthdata.com/downloads/) herunterladen
 2. Tabellen Aufbereitung – Pivot Tabelle (Spalten = Jahr, Zeilen = Asylstaat ISO, Werte = Summe Flüchtlinge) erstellen, bereinigte Tabelle als CSV exportieren
@@ -232,7 +232,7 @@ Eine animierte GIF Sequenz zeigt, wie Orkan Kyrill im Januar 2007 mit seinen
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C8_meteor-shower_quadrantids.png)
 ## Ergebnis
 Eine statische Karte zeigt alle in der Nacht vom 3./4. Januar 2025 erfassten Quadrantid Meteore über Europa – jede Bahn als farblich abgestufte Linie vom Eintrittpunkt bis zum Verglühen.
-Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
+<br>Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
 1. Datenbeschaffung – Quadrantid Messungen für den 3./4. 01 2025 als CSV von der öffentlichen Meteor-Map [herunterladen](https://tammojan.github.io/meteormap/). 
 2. Datenaufbereitung – für eine Animation wäre Datum/ Zeit in einem korrekten QGIS-Format notwendig (hier wird nur die Gesamtheit der Meteore dieser Nacht in einer PNG dargestellt) 

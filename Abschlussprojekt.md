@@ -106,12 +106,14 @@ Die Punkt-Rasterkarte zeigt, dass sich AirBnB-Angebote in Berlin stark auf die i
 <br>
 # EP.04 | 
 ![image](https://github.com/To-David/B10-DTM/blob/9d39f689f44bff8a86cf113991f89a6287f4e36b/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen.png)
-[Zuwachs der AfD](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
 
 
 ## Ergebnis
 Die Auswertung liefert je Wahljahr eine thematische Karte, in der jeder Wahlkreis in der Parteifarbe der siegreichen Zweitstimme eingefärbt ist. Die Deckkraft der Fläche steigt proportional zum Stimmenanteil der Gewinnerpartei. So werden auf einen Blick sowohl der Wahlsieger als auch die Stärke seines Vorsprungs sichtbar, was den Vergleich zwischen 2021 und 2025 erleichtert. 
 Anmerkung: Beim Export wurden die Farben verzerrt. Besonders deutlich wird dies beim Rot der SPD.
+<br><br>
+Eine Weitere Karte wurde für den Zuwachs der Afd zwischen 2021 und 2025 erstellt: 
+[Zuwachs der AfD](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-04-24_David_%C3%9C4_Bundestagswahl_Zweitstimmen_AfD.png)
 ## Arbeitsschritte
 1. Datenbeschaffung – Wahlkreis Shapefile sowie finale Zweitstimmenergebnisse 2025 und 2021 von der Bundeswahlleiterin herunterladen. 
 2. Datenaufbereitung – In einer Tabellenkalkulation alle irrelevanten Spalten/Zeilen löschen, nur Zweitstimmen der Parteien SPD, CDU/CSU, Grüne, Linke und AfD behalten, CSU Werte in Bayern zur CDU addieren, anschließend als CSV speichern. 

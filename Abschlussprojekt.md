@@ -174,6 +174,7 @@ Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Ant
 ![image](https://github.com/To-David/B10-DTM/blob/85770d4b2ec99e0dfab818f12af690dba4be69fa/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
 ## Ergebnis
 Zwischen 2010 und 2024 verließen rund 7 Mio. Flüchtlinge Syrien. Die Fluchtströme lassen sich in fünf Größenklassen gliedern (10.000 – 3,2 Mio). Der räumliche Schwerpunkt blieb klar auf Syriens Nachbarländern; europäische Ziele traten v. a. ab 2014 / 2015 hinzu und verstetigten sich bis 2024. 
+Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
 1. Datenbeschaffung – UNHCR Flüchtlingszahlen und weltweite Landesgeometrien herunterladen
 2. Tabellen Aufbereitung – Pivot Tabelle (Spalten = Jahr, Zeilen = Asylstaat ISO, Werte = Summe Flüchtlinge) erstellen, bereinigte Tabelle als CSV exportieren
@@ -227,16 +228,27 @@ Eine animierte GIF Sequenz zeigt, wie Orkan Kyrill im Januar 2007 mit seinen
 <br><br>
 <a id="EP.08"></a>
 <br>
-# EP.08 | 
+# EP.08 | Animationen in QGIS (Meteor Shower Quadrantids)
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C8_meteor-shower_quadrantids.png)
 ## Ergebnis
-
+Eine statische Karte zeigt alle in der Nacht vom 3./4. Januar 2025 erfassten Quadrantid Meteore über Europa – jede Bahn als farblich abgestufte Linie vom Eintrittpunkt bis zum Verglühen.
+Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
-
+1. Datenbeschaffung – Quadrantid Messungen für den 3./4. 01 2025 als CSV von der öffentlichen Meteor-Map herunterladen. 
+2. Datenaufbereitung – für eine Animation wäre Datum/ Zeit in einem korrekten QGIS-Format notwendig (hier wird nur die Gesamtheit der Meteore dieser Nacht in einer PNG dargestellt) 
+3. Geometrieerzeugung – mit „Geometrie nach Ausdruck“ eine Linie aus Start  und Endkoordinate jeder Spur generieren.
+4. Hintergrund – Europäische Ländergrenzen (Natural Earth) hinzufügen. 
+5. Symbolisierung – interpolierter Farbverlauf (z. B. Gelb → Violett) und reduzierte Deckkraft, um Überlagerungen sichtbar zu halten. 
+6. Kartenelemente – Titel, Maßstab und Quellenangabe hinzufügen
+7. Export – Layout im gewünschten Maßstab als PNG 1080x1080px
 ## Vorteile der Methode
-
+* Übersicht – Intuitive Karte auch für Laien leicht zu interpretieren
+* Geringe Tool Abhängigkeit – QGIS Funktionen reichen aus; nur einmalige Python Zeile für Datumskorrektur falls Animation benötigt wird.
 ## Nachteile der Methode
-
+* Keine Dynamik – zeitlicher Verlauf des Schauers geht verloren.
+* Informationsdichte – zu viele Spuren in einer Grafik können unübersichtlich wirken.
+* Weiterhin manuelle Vorarbeit – Datumsformatierung und Ausdrucke müssen händisch eingerichtet werden.
+* Begrenzte Kontextinfos – Geschwindigkeit, Dauer oder Stationsnamen lassen sich nur über zusätzliche Karten oder Tabellen vermitteln.
 
 <br><br>
 <a id="EP.09"></a>

@@ -253,12 +253,23 @@ Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x10
 <br><br>
 <a id="EP.09"></a>
 <br>
-# EP.09 | 
+# EP.09 | 2.5D-Gebäudemodelle (Dresden)
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C9_2.5d-stadtmodelle_dresen.png)
 ## Ergebnis
-
+Für einen kleinen Teil des Dresdner Stadtgebiet wurde eine Karte erzeugt, welche ein 2,5 D Gebäudemodell darstellt. Dabei wurden die Höhen aus den öffentlich zugänglichen Shapefiles erzeugt.
 ## Arbeitsschritte
-
+1. Datenbeschaffung – offene 3 D Gebäudedaten für den gewünschten Ausschnitt herunterladen und in QGIS laden 
+2. Symbolisierung – in den Layer Eigenschaften den Stil 2.5 D wählen, „H_Objekt“ als Höhenattribut setzen, Blickwinkel auf 90 ° stellen und Schatten für besser Performance deaktivieren
+3. Farbverlauf – zum Einzelsymbol zurückkehren, untere Einfache Füllung auf Gradientenfüllung umstellen, konischen Verlauf definieren, Koordinatenmodus auf Ansichtsfenster und Spreizung auf Reflektieren stellen 
+4. 3 D Parameter – im Reiter 3D Ansicht den Offset als Ausdruck „H_Objekt – H_Absolut“ setzen, um korrekte Gebäudehöhen zu erhalten
+5. Navigation – über Ansicht → 3D Kartenansicht ein Fenster öffnen und das Modell interaktiv prüfen 
+6. Export – gewünschte Kameraperspektive festlegen und als PNG ausgeben; GIF Erstellung wird übersprungen (nicht benötigt), Alternativ Layout erstellen und drucken
 ## Vorteile der Methode
-
+* Open Source – alle Schritte lassen sich mit QGIS ohne externe Software
+* Schnelle Umsetzung – wenige Einstellungen genügen, um ein realitätsnahes 2.5D Modell zu erzeugen 
+* Interaktive Erkundung – Perspektive, Neigung und Zoom lassen sich jederzeit ändern, was das Verständnis der Gebäudestruktur verbessert 
+* Geringe Systemlast – bei moderaten Datengrößen läuft die Darstellung flüssig 
 ## Nachteile der Methode
+* Farbdesign – individuelle Farbverläufe einzurichten ist in QGIS umständlich 
+* Performancegrenzen – bei sehr großen oder komplexen Datensätzen kann QGIS ins Stocken geraten 
+* Funktionsumfang – für anspruchsvolle 3 D Analysen sind spezialisierte Programme oft besser geeignet

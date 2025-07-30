@@ -20,7 +20,7 @@ Kontakt: toda5240@bht-berlin.de
 <a id="EP.01"></a>
 <br>
 # EP.01 | Dasymetrische Choroplethenkarte (Bevölkerungsdichte Berlins)
-![image](https://github.com/To-David/B10-DTM/blob/cf572afbcd849946e0471e8133b370fedbe4090b/files/25-04-03_David_%C3%9C1_Planungsr%C3%A4ume-Berlins.png)
+![image](https://github.com/To-David/B10-DTM/blob/69319b874a4c2250bc5ceda64a83dfbf810f9007/files/25-04-03_David_%C3%9C1_Planungsr%C3%A4ume-Berlins_final.png)
 ## Ergebnis
 Die fertige A3 Karte umfasst zwei eigenständige Darstellungen der Bevölkerungsdichte in Berlins Planungsräumen:
 * Einfache Choroplethenkarte – Hier wird die Bevölkerungszahl jedes Planungsraums auf dessen Gesamtfläche bezogen. Die Dichte wurde in QGIS aus dem Ausdruck EW / ($area / 10 000) berechnet und anschließend mit dem Klassifikationsmodus Natürliche Unterbrechungen (Jenks) in fünf Farbstufen visualisiert.

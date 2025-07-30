@@ -56,7 +56,7 @@ Die Hexagon Choroplethenkarte (Seitenlänge = 500 m) zeigt deutlich, dass 
 1.	Datenbeschaffung – Bezirksgrenzen und Baumbestand als WFS-Layer aus dem [Geoportal Berlin](https://fbinter.stadt-berlin.de/fb/index.jsp) einfügen
 2.	Erstellen des Hexagongitters – Menü Vektor → Recherchewerkzeuge → Gitter erzeugen
 * Typ = „Hexagon (Polygone)“, Ausdehnung = Bezirksgrenzen Layer
-* Seitenlänge 500 m → kurzer Diagonal¬abstand ≈ 866,025 m als horizontale & vertikale Schrittweite eingetragen. 
+* Seitenlänge 500 m → kurzer Diagonalabstand ≈ 866,025 m als horizontale & vertikale Schrittweite eingetragen. 
 3.	Aggregation (räumlicher Join) – Verarbeitung → Werkzeugkiste → „Attribute nach Position verknüpfen (Zusammenfassung)“
 * Ziel Layer = Hexagon Grid, Join Layer = Kirschbaumpunkte
 * Operation = Summe der Baumanzahl pro Zelle
@@ -170,28 +170,28 @@ Die erstellte Tile Map Karte macht auf einen Blick sichtbar, wie stark der Ant
 # EP.06 | Flowmaps (Syrische Flüchtlinge 2010-2024)
 ![image](https://github.com/To-David/B10-DTM/blob/85770d4b2ec99e0dfab818f12af690dba4be69fa/files/25-06-09_David_%C3%9C6_Syria-refugees.png)
 ## Ergebnis
-Zwischen 2010 und 2024 verließen rund 7 Mio. Flüchtlinge Syrien. Die Fluchtströme lassen sich in fünf Größenklassen gliedern (10.000 – 3,2 Mio). Der räumliche Schwerpunkt blieb klar auf Syriens Nachbarländern; europäische Ziele traten v. a. ab 2014 / 2015 hinzu und verstetigten sich bis 2024. 
+Zwischen 2010 und 2024 verließen rund 7 Mio. Flüchtlinge Syrien. Die Fluchtströme lassen sich in fünf Größenklassen gliedern (10.000 – 3,2 Mio). Der räumliche Schwerpunkt blieb klar auf Syriens Nachbarländern; europäische Ziele traten v. a. ab 2014 / 2015 hinzu und verstetigten sich bis 2024. Auf dieser Karte wurde der Übersicht halber ein Cutoff von 10.000 gewählt.
 <br>Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
 1. Datenbeschaffung – [UNHCR Flüchtlingszahlen](https://www.unhcr.org/refugee-statistics/download) und weltweite [Landesgeometrien](https://www.naturalearthdata.com/downloads/) herunterladen
 2. Tabellen Aufbereitung – Pivot Tabelle (Spalten = Jahr, Zeilen = Asylstaat ISO, Werte = Summe Flüchtlinge) erstellen, bereinigte Tabelle als CSV exportieren
 3. Layer Import – Länderflächen sowie CSV in QGIS laden; CSV ohne Geometrie als Text Layer einbinden
 4. Zentroid Berechnung – Mittelpunkte aller Staaten erzeugen und gegebenenfalls bei Überseegebieten korrigieren
-5. Projektion – Eigene orthographische Projektion (+proj = ortho, lat₀ = 50,3°, lon₀ = 30,3°) anlegen, um eine Globus¬ansicht abzubilden
+5. Projektion – Eigene orthographische Projektion (+proj=ortho +lat_0=50.3 +lon_0=30.3 +x_0=0 +y_0=0 +a=6371000 +b=6371000 +units=m +no_defs) anlegen, um eine Globusansicht abzubilden
 6. Geometrie Join – CSV über ISO Code mit Zentroid Layer verknüpfen
-7. Linien Generierung – Im Feld¬rechner feste Ursprung¬koordinaten (Syrien) und Ziel¬koordinaten ($x, $y) anlegen; „XY → Linie“ Werkzeug ausführen
+7. Linien Generierung – Im Feldrechner feste Ursprungkoordinaten (Syrien) und Zielkoordinaten ($x, $y) anlegen; „XY → Linie“ Werkzeug ausführen
 8. Symbolisierung
 * Linienbreite nach Flüchtlingszahl staffeln (5 Klassen)
-* Syrien als roten, groß¬zügig skalierten Punkt kennzeichnen
-* Ozeanflächen dunkelblau / shapeburst füllen, um Globus¬effekt zu erzielen
+* Syrien als roten, großzügig skalierten Punkt kennzeichnen
+* Ozeanflächen dunkelblau / shapeburst füllen, um Globuseffekt zu erzielen
 ## Vorteile der Methode
 * Räumliche Kontextualisierung – Herkunft und Ziel stehen in direktem Bezug, Richtung & Distanz sind sofort erkennbar
 * Vergleichbarkeit – Graduierte Linienbreiten ermöglichen einen schnellen quantitativen Vergleich zwischen Aufnahmestaaten
-* Visuelle Attraktivität – Orthographische Projektion liefert eine eingängige, fast globus¬ähnliche Darstellung, die auch Laien anspricht
+* Visuelle Attraktivität – Orthographische Projektion liefert eine eingängige, fast globusähnliche Darstellung, die auch Laien anspricht
 ## Nachteile der Methode
-* Linienüberlagerung – Viele ähnliche Pfade können das Bild überfrachten und Details verdecken, Libanon mit dem zweitgrößten Anteil wird komplett verdeckt
+* Linienüberlagerung – Viele ähnliche Pfade können das Bild überladen und Details verdecken, Libanon mit dem zweitgrößten Anteil wird komplett verdeckt
 * Zentroid Ungenauigkeit – Staaten mit Überseegebieten erhalten falsche Mittelpunkte und müssen händisch korrigiert werden
-* Begrenzter Ausschnitt – Die orthographische Projektion zeigt nur die halbe Erde; z. B. Amerika liegt außerhalb des Sichtfelds, Randgeometrien werden teilweise nicht korrekt dargestellt (z.B. gerade Linien bei Brasilien, Kanada) 
+* Begrenzter Ausschnitt – Die orthographische Projektion zeigt nur die halbe Erde; Randgeometrien werden teilweise nicht korrekt dargestellt (z.B. gerade Linien bei Brasilien, Kanada) 
 
 <br><br>
 <a id="EP.07"></a>
@@ -210,12 +210,12 @@ Eine animierte GIF Sequenz zeigt, wie Orkan Kyrill im Januar 2007 mit seinen
 * Zeitlich: „Nur Layer neuzeichnen“
 5. Kartenlayout – Ansicht → Dekorationen: Maßstab, Titel, Impressum anlegen
 6. Export – Animation mit dem Uhr Werkzeug abspielen und einzelne Frames als PNG ausgeben
-7. Post Processing – Bildserie in Photoshop zu einem GIF Datei zusammenfügen [Guide](https://www.adobe.com/africa/learn/photoshop/web/make-animated-gif)
+7. Post Processing – Bildserie in Photoshop zu einer GIF Datei zusammenfügen ([Guide](https://www.adobe.com/africa/learn/photoshop/web/make-animated-gif))
 ## Vorteile der Methode
 * Intuitive Visualisierung des Sturmverlaufs
 * Verständlich ohne meteorologische Fachkenntnisse
 * Hohe gestalterische Freiheit (Farben, Vektorpfeile, Geschwindigkeit)
-* Ergebnis ist plattform¬unabhängig und schnell teilbar
+* Ergebnis ist plattformunabhängig und schnell teilbar
 ## Nachteile der Methode
 * Exakte Zahlenwerte fehlen; eine Legende lässt sich nur schwer integrieren
 * GIFs können in der Regel weder pausiert noch zurückgespult werden
@@ -228,24 +228,22 @@ Eine animierte GIF Sequenz zeigt, wie Orkan Kyrill im Januar 2007 mit seinen
 # EP.08 | Animationen in QGIS (Meteor Shower Quadrantids)
 ![image](https://github.com/To-David/B10-DTM/blob/07fc2314d888f1e9093d5af6cf99fb3469437fb2/files/25-06-26_David_%C3%9C8_meteor-shower_quadrantids.png)
 ## Ergebnis
-Eine statische Karte zeigt alle in der Nacht vom 3./4. Januar 2025 erfassten Quadrantid Meteore über Europa – jede Bahn als farblich abgestufte Linie vom Eintrittpunkt bis zum Verglühen.
+Eine statische Karte zeigt alle in der Nacht vom 3./4. Januar 2025 erfassten Quadrantid Meteore über Europa – jede Bahn als farblich abgestufte Linie vom Eintrittspunkt bis zum Verglühen.
 <br>Anmerkung: Qualität leidet deutlich unter der Aufgabenstellung "PNG mit 1080x1080px"
 ## Arbeitsschritte
 1. Datenbeschaffung – Quadrantid Messungen für den 3./4. 01 2025 als CSV von der öffentlichen Meteor-Map [herunterladen](https://tammojan.github.io/meteormap/). 
 2. Datenaufbereitung – für eine Animation wäre Datum/ Zeit in einem korrekten QGIS-Format notwendig (hier wird nur die Gesamtheit der Meteore dieser Nacht in einer PNG dargestellt) 
 3. Geometrieerzeugung – mit „Geometrie nach Ausdruck“ eine Linie aus Start  und Endkoordinate jeder Spur generieren.
-4. Hintergrund – Europäische Ländergrenzen (Natural Earth) hinzufügen. 
+4. Hintergrund – ESRI Background Map (Dark); alternativ können auch Geometrien von Natural Earth genuttz werden. 
 5. Symbolisierung – interpolierter Farbverlauf (z. B. Gelb → Violett) und reduzierte Deckkraft, um Überlagerungen sichtbar zu halten. 
 6. Kartenelemente – Titel, Maßstab und Quellenangabe hinzufügen
 7. Export – Layout im gewünschten Maßstab als PNG 1080x1080px
 ## Vorteile der Methode
 * Übersicht – Intuitive Karte auch für Laien leicht zu interpretieren
-* Geringe Tool Abhängigkeit – QGIS Funktionen reichen aus; nur einmalige Python Zeile für Datumskorrektur falls Animation benötigt wird.
+* Geringe Tool Abhängigkeit – QGIS Funktionen reichen aus; einmaliger Python-Befehl für Datumskorrektur falls Animation benötigt wird.
 ## Nachteile der Methode
 * Keine Dynamik – zeitlicher Verlauf des Schauers geht verloren.
 * Informationsdichte – zu viele Spuren in einer Grafik können unübersichtlich wirken.
-* Weiterhin manuelle Vorarbeit – Datumsformatierung und Ausdrucke müssen händisch eingerichtet werden.
-* Begrenzte Kontextinfos – Geschwindigkeit, Dauer oder Stationsnamen lassen sich nur über zusätzliche Karten oder Tabellen vermitteln.
 
 <br><br>
 <a id="EP.09"></a>
@@ -258,9 +256,9 @@ Für einen kleinen Teil des Dresdner Stadtgebiet wurde eine Karte erzeugt, welch
 1. Datenbeschaffung – offene 3D Gebäudedaten für den gewünschten Ausschnitt [herunterladen](https://www.geodaten.sachsen.de/downloadbereich-digitale-3d-stadtmodelle-4875.html) und in QGIS importieren 
 2. Symbolisierung – in den Layer Eigenschaften den Stil 2.5 D wählen, „H_Objekt“ als Höhenattribut setzen, Blickwinkel auf 90° stellen und Schatten für besser Performance deaktivieren
 3. Farbverlauf – zum Einzelsymbol zurückkehren, untere Einfache Füllung auf Gradientenfüllung umstellen, konischen Verlauf definieren, Koordinatenmodus auf Ansichtsfenster und Spreizung auf Reflektieren stellen 
-4. 3 D Parameter – im Reiter 3D Ansicht den Offset als Ausdruck „H_Objekt – H_Absolut“ setzen, um korrekte Gebäudehöhen zu erhalten
+4. 3D Parameter – im Reiter 3D Ansicht den Offset als Ausdruck „H_Objekt – H_Absolut“ setzen, um korrekte Gebäudehöhen zu erhalten
 5. Navigation – über Ansicht → 3D Kartenansicht ein Fenster öffnen und das Modell interaktiv prüfen 
-6. Export – gewünschte Kameraperspektive festlegen und als PNG ausgeben; GIF Erstellung wird übersprungen (nicht benötigt), alternativ Layout erstellen und drucken
+6. Export – gewünschte Kameraperspektive festlegen und als PNG ausgeben; alternativ Layout erstellen und drucken
 ## Vorteile der Methode
 * Open Source – alle Schritte lassen sich mit QGIS ohne externe Software
 * Schnelle Umsetzung – wenige Einstellungen genügen, um ein realitätsnahes 2.5D Modell zu erzeugen 
